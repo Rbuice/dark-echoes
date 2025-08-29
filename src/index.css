@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+}
+body {
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  gap: 1ch;
+}
+
+@media (width >= 600px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+h1 {
+  text-align: center;
+}
+.index ul {
+  display: grid;
+  gap: 1ch;
+  list-style-type: none;
+  padding: 0.5rem;
+  border: 2px, solid, white;
+}
+
+.index li {
+  padding: 1ch;
+  border: 1px, dashed, white;
+}
+
+.index li:hover {
+  cursor: pointer;
+  font-style: italic;
+  color: red;
+  border-color: red;
+}
+
+.details {
+  padding: 0.5rem;
+  gap: 1ch;
+}
